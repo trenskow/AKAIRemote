@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="99R-31-m54">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nnT-26-QIb">
+            <objects>
+                <viewController id="99R-31-m54" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xpr-JD-7z3"/>
+                        <viewControllerLayoutGuide type="bottom" id="U1Y-AN-pS6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DZu-yn-wlb">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-SZ-BPN">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0Q-Qf-Ur7">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="152"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AkaiRemote" translatesAutoresizingMaskIntoConstraints="NO" id="cG1-iA-CBk">
+                                        <rect key="frame" x="269" y="84" width="129" height="15"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cG1-iA-CBk" firstAttribute="centerX" secondItem="q0Q-Qf-Ur7" secondAttribute="centerX" id="vqv-O8-vtx"/>
+                                    <constraint firstItem="cG1-iA-CBk" firstAttribute="centerY" secondItem="q0Q-Qf-Ur7" secondAttribute="centerY" constant="15" id="y8Z-z5-jEA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpN-NR-NsD">
+                                <rect key="frame" x="0.0" y="224" width="667" height="151"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Connected" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-bf-L9n">
+                                        <rect key="frame" x="301" y="70" width="87" height="11"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Socket" translatesAutoresizingMaskIntoConstraints="NO" id="yJA-CA-dTw">
+                                        <rect key="frame" x="279" y="67" width="17" height="17"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Hj8-EC-KPZ">
+                                        <rect key="frame" x="273" y="61" width="29" height="29"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uDk-bf-L9n" firstAttribute="centerX" secondItem="lpN-NR-NsD" secondAttribute="centerX" constant="11" id="0Qb-4j-tJk"/>
+                                    <constraint firstItem="Hj8-EC-KPZ" firstAttribute="centerY" secondItem="yJA-CA-dTw" secondAttribute="centerY" id="3Ap-c4-yj9"/>
+                                    <constraint firstItem="Hj8-EC-KPZ" firstAttribute="centerX" secondItem="yJA-CA-dTw" secondAttribute="centerX" id="M2Y-NI-s0j"/>
+                                    <constraint firstItem="uDk-bf-L9n" firstAttribute="leading" secondItem="yJA-CA-dTw" secondAttribute="trailing" constant="5" id="UKN-Rg-coD"/>
+                                    <constraint firstItem="uDk-bf-L9n" firstAttribute="centerY" secondItem="lpN-NR-NsD" secondAttribute="centerY" id="h1p-Ww-GTo"/>
+                                    <constraint firstItem="yJA-CA-dTw" firstAttribute="centerY" secondItem="uDk-bf-L9n" secondAttribute="centerY" id="o25-Ge-MHx"/>
+                                </constraints>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="QFI-gJ-1VB">
+                                <rect key="frame" x="140" y="152" width="71" height="71"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="W76-d2-bFm">
+                                <rect key="frame" x="219" y="152" width="71" height="71"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="tBQ-u2-OYH">
+                                <rect key="frame" x="298" y="152" width="71" height="71"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="17T-sz-Zsz">
+                                <rect key="frame" x="377" y="152" width="71" height="71"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Button" translatesAutoresizingMaskIntoConstraints="NO" id="BfO-rc-Maf">
+                                <rect key="frame" x="456" y="152" width="71" height="71"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Record" translatesAutoresizingMaskIntoConstraints="NO" id="ObB-UL-TIX">
+                                <rect key="frame" x="168" y="179" width="16" height="16"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Rewind" translatesAutoresizingMaskIntoConstraints="NO" id="ual-IF-Ic6">
+                                <rect key="frame" x="244" y="179" width="21" height="16"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Stop" translatesAutoresizingMaskIntoConstraints="NO" id="bX7-Yo-5BH">
+                                <rect key="frame" x="325" y="179" width="17" height="17"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="fON-Po-6NC">
+                                <rect key="frame" x="407" y="180" width="11" height="16"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="FastForward" translatesAutoresizingMaskIntoConstraints="NO" id="wO9-DT-6ho">
+                                <rect key="frame" x="481" y="180" width="21" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.42273995539999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="top" secondItem="q0Q-Qf-Ur7" secondAttribute="bottom" id="2pz-Yz-zn5"/>
+                            <constraint firstItem="wO9-DT-6ho" firstAttribute="centerY" secondItem="BfO-rc-Maf" secondAttribute="centerY" id="3Gz-tc-dtO"/>
+                            <constraint firstItem="fON-Po-6NC" firstAttribute="centerX" secondItem="17T-sz-Zsz" secondAttribute="centerX" id="50C-WD-xbG"/>
+                            <constraint firstItem="W76-d2-bFm" firstAttribute="leading" secondItem="QFI-gJ-1VB" secondAttribute="trailing" constant="8" id="523-HZ-Pyd"/>
+                            <constraint firstAttribute="trailing" secondItem="1ci-SZ-BPN" secondAttribute="trailing" id="5MI-Il-qGd"/>
+                            <constraint firstAttribute="topMargin" secondItem="q0Q-Qf-Ur7" secondAttribute="top" id="7tM-Qh-kqw"/>
+                            <constraint firstItem="U1Y-AN-pS6" firstAttribute="top" secondItem="1ci-SZ-BPN" secondAttribute="bottom" id="9bB-4F-E5S"/>
+                            <constraint firstItem="1ci-SZ-BPN" firstAttribute="leading" secondItem="DZu-yn-wlb" secondAttribute="leading" id="BTy-5B-Wmq"/>
+                            <constraint firstItem="17T-sz-Zsz" firstAttribute="top" secondItem="BfO-rc-Maf" secondAttribute="top" id="DVP-ac-Iob"/>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="leading" secondItem="W76-d2-bFm" secondAttribute="trailing" constant="8" id="EkF-jz-g3D"/>
+                            <constraint firstItem="BfO-rc-Maf" firstAttribute="leading" secondItem="17T-sz-Zsz" secondAttribute="trailing" constant="8" id="FUy-v5-uK0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lpN-NR-NsD" secondAttribute="bottom" id="J6M-a8-rTl"/>
+                            <constraint firstItem="q0Q-Qf-Ur7" firstAttribute="leading" secondItem="DZu-yn-wlb" secondAttribute="leading" id="KLt-ec-2IS"/>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="top" secondItem="17T-sz-Zsz" secondAttribute="top" id="LPH-wd-3W4"/>
+                            <constraint firstItem="ObB-UL-TIX" firstAttribute="centerY" secondItem="QFI-gJ-1VB" secondAttribute="centerY" id="Lk3-HG-AgM"/>
+                            <constraint firstAttribute="trailing" secondItem="q0Q-Qf-Ur7" secondAttribute="trailing" id="Loh-CZ-lIb"/>
+                            <constraint firstItem="ual-IF-Ic6" firstAttribute="centerX" secondItem="W76-d2-bFm" secondAttribute="centerX" id="MCg-JS-5rZ"/>
+                            <constraint firstItem="lpN-NR-NsD" firstAttribute="leading" secondItem="DZu-yn-wlb" secondAttribute="leading" id="NV1-Hs-aFt"/>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="centerX" secondItem="DZu-yn-wlb" secondAttribute="centerX" id="Tuu-Ts-KmB"/>
+                            <constraint firstItem="17T-sz-Zsz" firstAttribute="leading" secondItem="tBQ-u2-OYH" secondAttribute="trailing" constant="8" id="aJA-0b-TCp"/>
+                            <constraint firstItem="bX7-Yo-5BH" firstAttribute="centerY" secondItem="tBQ-u2-OYH" secondAttribute="centerY" id="bO5-lz-ooi"/>
+                            <constraint firstItem="bX7-Yo-5BH" firstAttribute="centerX" secondItem="tBQ-u2-OYH" secondAttribute="centerX" id="dJp-TB-huv"/>
+                            <constraint firstAttribute="trailing" secondItem="lpN-NR-NsD" secondAttribute="trailing" id="epx-H4-P8y"/>
+                            <constraint firstItem="ObB-UL-TIX" firstAttribute="centerX" secondItem="QFI-gJ-1VB" secondAttribute="centerX" id="f3S-Gh-QuC"/>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="top" secondItem="W76-d2-bFm" secondAttribute="top" id="hQd-3q-jZf"/>
+                            <constraint firstItem="wO9-DT-6ho" firstAttribute="centerX" secondItem="BfO-rc-Maf" secondAttribute="centerX" id="j7n-L1-sAo"/>
+                            <constraint firstItem="fON-Po-6NC" firstAttribute="centerY" secondItem="17T-sz-Zsz" secondAttribute="centerY" id="mbu-NE-7H0"/>
+                            <constraint firstItem="W76-d2-bFm" firstAttribute="top" secondItem="QFI-gJ-1VB" secondAttribute="top" id="pNR-yB-qBs"/>
+                            <constraint firstItem="tBQ-u2-OYH" firstAttribute="centerY" secondItem="DZu-yn-wlb" secondAttribute="centerY" id="tzC-C3-nBE"/>
+                            <constraint firstItem="1ci-SZ-BPN" firstAttribute="top" secondItem="Xpr-JD-7z3" secondAttribute="bottom" id="uko-mK-Jbd"/>
+                            <constraint firstItem="lpN-NR-NsD" firstAttribute="top" secondItem="tBQ-u2-OYH" secondAttribute="bottom" constant="1" id="vsY-iU-pOQ"/>
+                            <constraint firstItem="ual-IF-Ic6" firstAttribute="centerY" secondItem="W76-d2-bFm" secondAttribute="centerY" id="yXb-wV-vNZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMf-77-6gJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AkaiRemote" width="129" height="15"/>
+        <image name="Background" width="667" height="375"/>
+        <image name="Button" width="71" height="71"/>
+        <image name="Connected" width="87" height="11"/>
+        <image name="FastForward" width="21" height="16"/>
+        <image name="Play" width="11" height="16"/>
+        <image name="Record" width="16" height="16"/>
+        <image name="Rewind" width="21" height="16"/>
+        <image name="Socket" width="17" height="17"/>
+        <image name="Stop" width="17" height="17"/>
+        <image name="Yellow" width="29" height="29"/>
+    </resources>
+</document>

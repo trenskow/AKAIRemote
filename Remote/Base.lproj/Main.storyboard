@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bhU-Lu-Lhx">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remote View Controller-->
+        <scene sceneID="bEz-6H-7ie">
+            <objects>
+                <viewController id="bhU-Lu-Lhx" customClass="RemoteViewController" customModule="Shared" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JDO-Lr-SZv"/>
+                        <viewControllerLayoutGuide type="bottom" id="saS-rP-b1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IAN-c0-MvN">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-De-5ut">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g24-Ge-Hmy">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="151.5"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AkaiRemote" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-tq-43Z">
+                                        <rect key="frame" x="269" y="83.5" width="129" height="15"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lhn-tq-43Z" firstAttribute="centerY" secondItem="g24-Ge-Hmy" secondAttribute="centerY" constant="15" id="ZS8-VW-sPm"/>
+                                    <constraint firstItem="Lhn-tq-43Z" firstAttribute="centerX" secondItem="g24-Ge-Hmy" secondAttribute="centerX" id="itP-Mh-Icy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJA-1R-RUn">
+                                <rect key="frame" x="0.0" y="224" width="667" height="151"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Connected" translatesAutoresizingMaskIntoConstraints="NO" id="ZNc-pa-j0O">
+                                        <rect key="frame" x="301" y="70" width="87" height="11"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Socket" translatesAutoresizingMaskIntoConstraints="NO" id="uhV-yW-p70">
+                                        <rect key="frame" x="279" y="67" width="17" height="17"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Yellow" translatesAutoresizingMaskIntoConstraints="NO" id="lmY-gD-QOK">
+                                        <rect key="frame" x="273" y="61" width="29" height="29"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZNc-pa-j0O" firstAttribute="leading" secondItem="uhV-yW-p70" secondAttribute="trailing" constant="5" id="BFA-Ne-qg3"/>
+                                    <constraint firstItem="ZNc-pa-j0O" firstAttribute="centerX" secondItem="aJA-1R-RUn" secondAttribute="centerX" constant="11" id="GSy-iU-twP"/>
+                                    <constraint firstItem="uhV-yW-p70" firstAttribute="centerY" secondItem="ZNc-pa-j0O" secondAttribute="centerY" id="KKg-Cq-uO5"/>
+                                    <constraint firstItem="ZNc-pa-j0O" firstAttribute="centerY" secondItem="aJA-1R-RUn" secondAttribute="centerY" id="hDo-6o-jjB"/>
+                                    <constraint firstItem="lmY-gD-QOK" firstAttribute="centerY" secondItem="uhV-yW-p70" secondAttribute="centerY" id="ox6-U0-MYq"/>
+                                    <constraint firstItem="lmY-gD-QOK" firstAttribute="centerX" secondItem="uhV-yW-p70" secondAttribute="centerX" id="yCJ-Hq-kbN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-Dr-LSq" customClass="RemoteButton" customModule="Shared">
+                                <rect key="frame" x="140" y="151.5" width="71" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="8Os-t2-bPJ"/>
+                                    <constraint firstAttribute="width" constant="71" id="fmN-b9-RSA"/>
+                                </constraints>
+                                <state key="normal" image="Record" backgroundImage="Button"/>
+                                <state key="highlighted" image="Record" backgroundImage="ButtonHighlighted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="command">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchDown" id="009-nU-DIp"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpInside" id="Hcn-Mo-8BU"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchCancel" id="WhL-0e-5ri"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpOutside" id="yjE-an-qeX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilq-6x-53X" customClass="RemoteButton" customModule="Shared">
+                                <rect key="frame" x="219" y="151.5" width="71" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="5mc-zp-VBs"/>
+                                    <constraint firstAttribute="width" constant="71" id="TZP-NW-9Hn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                <state key="normal" image="Rewind" backgroundImage="Button"/>
+                                <state key="highlighted" image="Rewind" backgroundImage="ButtonHighlighted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="command">
+                                        <integer key="value" value="64"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpInside" id="9Az-W2-GHh"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchCancel" id="RTi-AB-ppu"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchDown" id="X3I-RF-R1K"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpOutside" id="f8P-Sm-5DC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtU-Y8-wOS" customClass="RemoteButton" customModule="Shared">
+                                <rect key="frame" x="298" y="151.5" width="71" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="CoX-2r-MDl"/>
+                                    <constraint firstAttribute="width" constant="71" id="VAt-Lp-4JN"/>
+                                </constraints>
+                                <state key="normal" image="Stop" backgroundImage="Button"/>
+                                <state key="highlighted" image="Stop" backgroundImage="ButtonHighlighted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="command">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchDown" id="Ggr-aJ-jhA"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpInside" id="SVM-W7-EA4"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchCancel" id="f2p-jt-FMl"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpOutside" id="kSj-yg-fh2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFa-So-9t4" customClass="RemoteButton" customModule="Shared">
+                                <rect key="frame" x="377" y="151.5" width="71" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="8ka-ao-3LR"/>
+                                    <constraint firstAttribute="width" constant="71" id="9Gx-hT-P8V"/>
+                                </constraints>
+                                <state key="normal" image="Play" backgroundImage="Button"/>
+                                <state key="highlighted" image="Play" backgroundImage="ButtonHighlighted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="command">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpInside" id="8nn-Gu-LSs"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpOutside" id="HCI-a5-cgN"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchDown" id="Owz-q1-ZB7"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchCancel" id="W62-u7-QV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-xo-qUf" customClass="RemoteButton" customModule="Shared">
+                                <rect key="frame" x="456" y="151.5" width="71" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="KwK-FL-Jec"/>
+                                    <constraint firstAttribute="height" constant="72" id="bku-hJ-c0u"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="FastForward" backgroundImage="Button"/>
+                                <state key="highlighted" image="FastForward" backgroundImage="ButtonHighlighted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="command">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpInside" id="IHg-jO-O3G"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchDown" id="fGH-lS-lNC"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchUpOutside" id="z3w-hr-m5c"/>
+                                    <action selector="stateChanged:" destination="bhU-Lu-Lhx" eventType="touchCancel" id="zLq-gt-HDo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.42273995535714287" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="centerY" secondItem="IAN-c0-MvN" secondAttribute="centerY" id="0o0-YO-7P1"/>
+                            <constraint firstItem="saS-rP-b1x" firstAttribute="top" secondItem="xLk-De-5ut" secondAttribute="bottom" id="12A-OD-jMV"/>
+                            <constraint firstItem="aJA-1R-RUn" firstAttribute="leading" secondItem="IAN-c0-MvN" secondAttribute="leading" id="31O-v4-htT"/>
+                            <constraint firstItem="lFa-So-9t4" firstAttribute="top" secondItem="6RI-xo-qUf" secondAttribute="top" id="6Wc-TH-bZ9"/>
+                            <constraint firstItem="xLk-De-5ut" firstAttribute="top" secondItem="JDO-Lr-SZv" secondAttribute="bottom" id="8wn-4t-lJE"/>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="centerX" secondItem="IAN-c0-MvN" secondAttribute="centerX" id="Br3-FG-grW"/>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="top" secondItem="lFa-So-9t4" secondAttribute="top" id="DNN-HT-Gjf"/>
+                            <constraint firstItem="g24-Ge-Hmy" firstAttribute="leading" secondItem="IAN-c0-MvN" secondAttribute="leading" id="Eol-CQ-c0p"/>
+                            <constraint firstAttribute="trailing" secondItem="g24-Ge-Hmy" secondAttribute="trailing" id="JSU-fY-JzT"/>
+                            <constraint firstItem="lFa-So-9t4" firstAttribute="leading" secondItem="BtU-Y8-wOS" secondAttribute="trailing" constant="8" id="KDC-05-xs7"/>
+                            <constraint firstItem="ilq-6x-53X" firstAttribute="leading" secondItem="Ge1-Dr-LSq" secondAttribute="trailing" constant="8" id="Ljl-mA-BIh"/>
+                            <constraint firstAttribute="topMargin" secondItem="g24-Ge-Hmy" secondAttribute="top" id="NQ9-ey-6Fw"/>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="top" secondItem="g24-Ge-Hmy" secondAttribute="bottom" id="YSe-hO-dhC"/>
+                            <constraint firstItem="ilq-6x-53X" firstAttribute="top" secondItem="Ge1-Dr-LSq" secondAttribute="top" id="amK-Hq-Yz0"/>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="leading" secondItem="ilq-6x-53X" secondAttribute="trailing" constant="8" id="d74-YY-5Um"/>
+                            <constraint firstAttribute="trailing" secondItem="aJA-1R-RUn" secondAttribute="trailing" id="gUx-1P-GXP"/>
+                            <constraint firstAttribute="trailing" secondItem="xLk-De-5ut" secondAttribute="trailing" id="isJ-4o-CFm"/>
+                            <constraint firstItem="aJA-1R-RUn" firstAttribute="top" secondItem="BtU-Y8-wOS" secondAttribute="bottom" id="k5e-hg-Mqb"/>
+                            <constraint firstItem="6RI-xo-qUf" firstAttribute="leading" secondItem="lFa-So-9t4" secondAttribute="trailing" constant="8" id="kyK-dK-bda"/>
+                            <constraint firstItem="xLk-De-5ut" firstAttribute="leading" secondItem="IAN-c0-MvN" secondAttribute="leading" id="lIO-pd-jyt"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aJA-1R-RUn" secondAttribute="bottom" id="po9-nr-pdd"/>
+                            <constraint firstItem="BtU-Y8-wOS" firstAttribute="top" secondItem="ilq-6x-53X" secondAttribute="top" id="q09-72-p9M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewStatusLED" destination="lmY-gD-QOK" id="dsL-45-0ET"/>
+                        <outletCollection property="allButtons" destination="Ge1-Dr-LSq" collectionClass="NSMutableArray" id="u5N-La-hzo"/>
+                        <outletCollection property="allButtons" destination="ilq-6x-53X" collectionClass="NSMutableArray" id="71v-rJ-Eib"/>
+                        <outletCollection property="allButtons" destination="BtU-Y8-wOS" collectionClass="NSMutableArray" id="Mld-qQ-uo0"/>
+                        <outletCollection property="allButtons" destination="lFa-So-9t4" collectionClass="NSMutableArray" id="0P5-aC-JGY"/>
+                        <outletCollection property="allButtons" destination="6RI-xo-qUf" collectionClass="NSMutableArray" id="Zkg-VG-J2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ej-Yu-vGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.176911544228" y="-5.5999999999999996"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AkaiRemote" width="129" height="15"/>
+        <image name="Background" width="667" height="375"/>
+        <image name="Button" width="71" height="71"/>
+        <image name="ButtonHighlighted" width="71" height="71"/>
+        <image name="Connected" width="87" height="11"/>
+        <image name="FastForward" width="21" height="16"/>
+        <image name="Play" width="11" height="16"/>
+        <image name="Record" width="16" height="16"/>
+        <image name="Rewind" width="21" height="16"/>
+        <image name="Socket" width="17" height="17"/>
+        <image name="Stop" width="17" height="17"/>
+        <image name="Yellow" width="29" height="29"/>
+    </resources>
+</document>
