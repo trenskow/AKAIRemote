@@ -140,6 +140,11 @@
                     <size key="freeformSize" width="320" height="100"/>
                     <connections>
                         <outlet property="imageViewStatusLED" destination="Af0-uD-Lzf" id="tEo-5q-cX4"/>
+                        <outletCollection property="allButtons" destination="d3E-9x-7V6" collectionClass="NSMutableArray" id="dZL-ET-YzK"/>
+                        <outletCollection property="allButtons" destination="XHQ-cH-wvG" collectionClass="NSMutableArray" id="QD0-h6-M4O"/>
+                        <outletCollection property="allButtons" destination="u6H-hQ-ohy" collectionClass="NSMutableArray" id="FA6-pV-aUn"/>
+                        <outletCollection property="allButtons" destination="qvx-6j-3Ac" collectionClass="NSMutableArray" id="Xhh-Qv-lrR"/>
+                        <outletCollection property="allButtons" destination="XHR-Nk-E2l" collectionClass="NSMutableArray" id="LjE-Wk-pC7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
